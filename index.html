@@ -104,6 +104,51 @@
                     </div>
                 </div>
             </section>
+            <!-- Gallery Section -->
+    <section id="gallery" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>River Conservation Project</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Community Cleanup Drive</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Educational Workshop</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Water Quality Testing</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Habitat Restoration</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Awareness Campaign</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
             <!-- Vision Section -->
             <section id="vision" class="content-section">
@@ -226,23 +271,31 @@
     <div id="donateModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeDonateModal()">&times;</span>
-            <h2>Support Our Cause</h2>
-            <p>Help us protect and preserve our rivers for future generations.</p>
+            <!-- <h2>Support Our Cause</h2>
+            <p>Help us protect and preserve our rivers for future generations.</p> -->
             
-            <div class="donate-amounts">
-                <button class="amount-btn" onclick="selectAmount(500)">₹500</button>
-                <button class="amount-btn" onclick="selectAmount(1000)">₹1000</button>
-                <button class="amount-btn" onclick="selectAmount(2000)">₹2000</button>
-                <button class="amount-btn" onclick="selectAmount(5000)">₹5000</button>
+             <h2>Support Our Mission</h2>
+            <div class="donate-options">
+                <div class="donate-section">
+                    <h3>Bank Transfer Details</h3>
+                    <div class="bank-details">
+                        <p><strong>Account Name:</strong> River Care Research Foundation</p>
+                        <p><strong>Account Number:</strong> XXXX XXXX XXXX</p>
+                        <p><strong>IFSC Code:</strong> XXXXXXXX</p>
+                        <p><strong>Bank:</strong> State Bank of India</p>
+                    </div>
+                </div>
+                <div class="donate-section">
+                    <h3>Scan QR Code</h3>
+                    <div class="qr-code">
+                        <div class="qr-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                            <!-- <img src=  alt=""> -->
+                            <p>QR Code for UPI Payment</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="custom-amount">
-                <input type="number" id="customAmount" placeholder="Enter custom amount" min="1">
-            </div>
-            
-            <button class="razorpay-btn" onclick="payWithRazorpay()">
-                Pay with Razorpay
-            </button>
         </div>
     </div>
 
