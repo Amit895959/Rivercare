@@ -774,3 +774,149 @@ footer {
 .social-links a:hover {
     transform: scale(1.1);
 }
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+
+.modal-content h2 {
+    color: #2E7D32;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.donate-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.donate-section {
+    text-align: center;
+}
+
+.donate-section h3 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.bank-details {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.bank-details p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+}
+
+.qr-placeholder {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #E8F5E8, #F1F8E9);
+    border: 2px dashed #4CAF50;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #4CAF50;
+}
+
+.qr-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.qr-placeholder p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2E7D32, #4CAF50);
+}
+/* Gallery Section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    aspect-ratio: 4/3;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #E8F5E8, #F1F8E9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #4CAF50;
+}
+
+.gallery-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.gallery-placeholder p {
+    font-weight: bold;
+    text-align: center;
+}
