@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>River Care Research Foundation | Clean Rivers | NGO in India</title>
 
-    <!-- Basic SEO -->
     <meta name="description" content="River Care Research Foundation is a non-profit NGO working to rejuvenate rivers, control pollution, and engage communities in India.">
     <meta name="keywords" content="River Care, Clean Rivers, River Pollution, NGO, River Conservation, River Protection, India NGO, Environmental NGO">
     <meta name="author" content="River Care Research Foundation">
 
-    <!-- Open Graph for Social Sharing -->
     <meta property="og:title" content="River Care Research Foundation">
     <meta property="og:description" content="Join our mission to protect and rejuvenate India's rivers for a better tomorrow.">
     <meta property="og:image" content="https://www.rivercareresearchfoundation.org/logo.jpeg.jpg">
     <meta property="og:url" content="https://www.rivercareresearchfoundation.org">
     <meta property="og:type" content="website">
 
-    <!-- Favicon -->
     <link rel="icon" href="logo.jpeg.jpg" type="image/jpeg">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- Ripple Background -->
+    <div class="water-bg">
+        <div class="ripple r1"></div>
+        <div class="ripple r2"></div>
+        <div class="ripple r3"></div>
+    </div>
+
     <!-- Header Section -->
     <header>
-        <div class="container">
+        <div class="header-inner container">
             <div class="logo-section">
-                <img src="logo.jpeg.jpg" alt="River Care Logo" class="logo">
+                <div class="logo-wrap">
+                    <img src="logo.jpeg.jpg" alt="River Care Logo" class="logo">
+                    <div class="logo-ring"></div>
+                </div>
                 <div class="logo-text">
                     <h1>River Care Research Foundation</h1>
-                    <h3>Ministry of Corporate Affairs Recognized CIN: U84119MP2023NPL066022</h3>
+                    <h3 class="cin-text">Ministry of Corporate Affairs Recognized &nbsp;|&nbsp; CIN: U84119MP2023NPL066022</h3>
                     <p class="hindi-slogan">नदियों है तो जल है, जल है तो कल है!</p>
+                    <p class="email">✉ rivercare2023@gmail.com</p>
                 </div>
-                <p class="email">  rivercare2023@gmail.com</p>
-
-                
             </div>
-            
-            <!-- Donate Button in Header -->
-             
             <div class="header-donate">
-                <button class="donate-btn" onclick="openDonateModal()">₹ Donate Now</button>
+                <button class="donate-btn" onclick="openDonateModal()">
+                    <span class="donate-icon">₹</span> Donate Now
+                </button>
             </div>
-            
         </div>
     </header>
 
@@ -55,10 +60,9 @@
                 <li><a href="#home" onclick="showSection('home')">Home</a></li>
                 <li><a href="#mission" onclick="showSection('mission')">Mission</a></li>
                 <li><a href="#vision" onclick="showSection('vision')">Vision</a></li>
-                
                 <li><a href="#message" onclick="showSection('message')">Message</a></li>
                 <li><a href="#work" onclick="showSection('work')">What We Do</a></li>
-                <li><a href="#gallery" onclick="showSection('gallery')"> Gallery</a></li>
+                <li><a href="#gallery" onclick="showSection('gallery')">Gallery</a></li>
                 <li><a href="#contact" onclick="showSection('contact')">Contact Us</a></li>
                 <li><a href="#about" onclick="showSection('about')">About Us</a></li>
             </ul>
@@ -68,25 +72,32 @@
     <!-- Main Content -->
     <main class="main-content">
         <div class="container">
+
             <!-- Home Section -->
             <section id="home" class="content-section active">
                 <div class="hero-section">
-                    <h2>Welcome to River Care Research Foundation</h2>
-                    
+                    <div class="hero-badge">🌊 Protecting India's Rivers Since 2023</div>
+                    <h2>Welcome to<br><span class="hero-highlight">River Care</span><br>Research Foundation</h2>
                     <p class="hero-description">
-                        Dedicated to preserving and protecting our precious rivers for future generations. 
-                        Join us in our mission to rejuvenate India's waterways and create a sustainable future.
+                        Dedicated to preserving and protecting our precious rivers for future generations. Join us in our mission to rejuvenate India's waterways and create a sustainable future.
                     </p>
+                    <div class="hero-cta">
+                        <button class="cta-btn primary" onclick="showSection('work')">Our Work ↓</button>
+                        <button class="cta-btn secondary" onclick="openDonateModal()">Support Us ₹</button>
+                    </div>
                     <div class="hero-stats">
                         <div class="stat-item">
+                            <div class="stat-icon">🌊</div>
                             <h3>Rivers</h3>
                             <p>Under Protection</p>
                         </div>
                         <div class="stat-item">
+                            <div class="stat-icon">🤝</div>
                             <h3>Communities</h3>
                             <p>Engaged</p>
                         </div>
                         <div class="stat-item">
+                            <div class="stat-icon">🔬</div>
                             <h3>Research</h3>
                             <p>Projects Active</p>
                         </div>
@@ -96,130 +107,139 @@
 
             <!-- Mission Section -->
             <section id="mission" class="content-section">
-                <h2>Our Mission</h2>
+                <div class="section-header">
+                    <span class="section-tag">Our Purpose</span>
+                    <h2>Our Mission</h2>
+                    <div class="section-line"></div>
+                </div>
                 <div class="mission-content">
                     <div class="mission-card">
-                        <h3>🌊 River Rejuvenation</h3>
+                        <div class="card-icon-wrap">🌊</div>
+                        <h3>River Rejuvenation</h3>
                         <p>To Rejuvenate National Rivers and help Government and local authorities in their National Mission for clean rivers.</p>
                     </div>
                 </div>
             </section>
-            <!-- Gallery Section -->
-    <section id="gallery" class="content-section">
-        <div class="container">
-            <h2 class="section-title">Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <!-- <img src="instagram.png" height="150px" width="160px" alt=""> -->
-                        <i class="fas fa-image"></i>
-                        <p>River Conservation Project</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Community Cleanup Drive</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Educational Workshop</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Water Quality Testing</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Habitat Restoration</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Awareness Campaign</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Additional awareness campaign photos -->
-            <div class="awareness-photos">
-                <h3 class="subsection-title">Awareness Campaign Highlights</h3>
-                <div class="awareness-grid">
-                    <div class="awareness-photo">
-                        <img src="3.jpg" alt="Community presentation" class="awareness-image">
-                        <div class="photo-caption">Before</div>
-                        <img src="22.jpg" alt="Community presentation" class="awareness-image">
-                        <div class="photo-caption">Before</div>
-                        <img src="8.jpg" alt="Community presentation" class="awareness-image">
-                        <div class="photo-caption"></div>
-                        <img src="24.jpg" alt="Community presentation" class="awareness-image">
-                        <div class="photo-caption"></div>
-                         <img src="6.jpg" alt="Community presentation" class="awareness-image">
-                        <div class="photo-caption">Our Team</div>
-                         <img src="15.jpg" alt="Community presentation" class="awareness-image">
-                        <div class="photo-caption">After</div>
-                        
-                        
-                    </div>
-                    <div class="awareness-photo">
-                        <img src="19.jpg" alt="Educational materials distribution" class="awareness-image">
-                        <div class="photo-caption">Before</div>
-                        <img src="23.jpg" alt="Educational materials distribution" class="awareness-image">
-                        <div class="photo-caption">Before</div>
-                        <img src="9.jpg" alt="Educational materials distribution" class="awareness-image">
-                        <div class="photo-caption"></div>
-                        <img src="12.jpg" alt="Educational materials distribution" class="awareness-image">
-                        <div class="photo-caption"></div>
-                         <img src="4.jpg" alt="Educational materials distribution" class="awareness-image">
-                        <div class="photo-caption"></div>
-                    </div>
-                    <div class="awareness-photo">
-                        <img src="20.jpg" class="awareness-image">
-                        <div class="photo-caption">Before</div>
-                        <img src="5.jpg" class="awareness-image">
-                        <div class="photo-caption"></div>
-                        <img src="10.jpg" class="awareness-image">
-                        <div class="photo-caption"></div>
-                        <img src="13.jpg" class="awareness-image">
-                        <div class="photo-caption">After</div>
-                        <img src="1.jpg" class="awareness-image">
-                        <div class="photo-caption">After</div>
-                    </div>
-                    <div class="awareness-photo">
-                        <img src="21.jpg" alt="Environmental workshop" class="awareness-image">
-                        <div class="photo-caption">Before</div>
-                        <img src="7.jpg" alt="Environmental workshop" class="awareness-image">
-                        <div class="photo-caption"></div>
-                        <img src="11.jpg" alt="Environmental workshop" class="awareness-image">
-                        <div class="photo-caption"></div>
-                        <img src="14.jpg" alt="Environmental workshop" class="awareness-image">
-                        <div class="photo-caption"></div>
-                        <img src="2.jpg" alt="Environmental workshop" class="awareness-image">
-                        <div class="photo-caption">Before</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
+            <!-- Gallery Section -->
+            <section id="gallery" class="content-section">
+                <div class="section-header">
+                    <span class="section-tag">Visual Stories</span>
+                    <h2>Gallery</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span class="g-icon">🏞️</span>
+                            <p>River Conservation Project</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span class="g-icon">🧹</span>
+                            <p>Community Cleanup Drive</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span class="g-icon">📖</span>
+                            <p>Educational Workshop</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span class="g-icon">🧪</span>
+                            <p>Water Quality Testing</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span class="g-icon">🌱</span>
+                            <p>Habitat Restoration</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <span class="g-icon">📢</span>
+                            <p>Awareness Campaign</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="awareness-photos">
+                    <h3 class="subsection-title">Awareness Campaign Highlights</h3>
+                    <div class="awareness-grid">
+                        <div class="awareness-photo">
+                            <img src="3.jpg" alt="Community presentation" class="awareness-image">
+                            <div class="photo-caption">Before</div>
+                            <img src="22.jpg" alt="Community presentation" class="awareness-image">
+                            <div class="photo-caption">Before</div>
+                            <img src="8.jpg" alt="Community presentation" class="awareness-image">
+                            <div class="photo-caption"></div>
+                            <img src="24.jpg" alt="Community presentation" class="awareness-image">
+                            <div class="photo-caption"></div>
+                            <img src="6.jpg" alt="Community presentation" class="awareness-image">
+                            <div class="photo-caption">Our Team</div>
+                            <img src="15.jpg" alt="Community presentation" class="awareness-image">
+                            <div class="photo-caption">After</div>
+                        </div>
+                        <div class="awareness-photo">
+                            <img src="19.jpg" alt="Educational materials distribution" class="awareness-image">
+                            <div class="photo-caption">Before</div>
+                            <img src="23.jpg" alt="Educational materials distribution" class="awareness-image">
+                            <div class="photo-caption">Before</div>
+                            <img src="9.jpg" alt="Educational materials distribution" class="awareness-image">
+                            <div class="photo-caption"></div>
+                            <img src="12.jpg" alt="Educational materials distribution" class="awareness-image">
+                            <div class="photo-caption"></div>
+                            <img src="4.jpg" alt="Educational materials distribution" class="awareness-image">
+                            <div class="photo-caption"></div>
+                        </div>
+                        <div class="awareness-photo">
+                            <img src="20.jpg" class="awareness-image">
+                            <div class="photo-caption">Before</div>
+                            <img src="5.jpg" class="awareness-image">
+                            <div class="photo-caption"></div>
+                            <img src="10.jpg" class="awareness-image">
+                            <div class="photo-caption"></div>
+                            <img src="13.jpg" class="awareness-image">
+                            <div class="photo-caption">After</div>
+                            <img src="1.jpg" class="awareness-image">
+                            <div class="photo-caption">After</div>
+                        </div>
+                        <div class="awareness-photo">
+                            <img src="21.jpg" alt="Environmental workshop" class="awareness-image">
+                            <div class="photo-caption">Before</div>
+                            <img src="7.jpg" alt="Environmental workshop" class="awareness-image">
+                            <div class="photo-caption"></div>
+                            <img src="11.jpg" alt="Environmental workshop" class="awareness-image">
+                            <div class="photo-caption"></div>
+                            <img src="14.jpg" alt="Environmental workshop" class="awareness-image">
+                            <div class="photo-caption"></div>
+                            <img src="2.jpg" alt="Environmental workshop" class="awareness-image">
+                            <div class="photo-caption">Before</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- Vision Section -->
             <section id="vision" class="content-section">
-                <h2>Our Vision</h2>
+                <div class="section-header">
+                    <span class="section-tag">Looking Ahead</span>
+                    <h2>Our Vision</h2>
+                    <div class="section-line"></div>
+                </div>
                 <div class="vision-content">
                     <div class="vision-card">
-                        <h3>🎯 Pollution Control</h3>
+                        <div class="card-icon-wrap">🎯</div>
+                        <h3>Pollution Control</h3>
                         <p>To work toward all kind of river pollution control and purify and treat all kinds of river pollutants with technology and human efforts so that unpolluted river water is available for domestic, commercial and industrial consumption.</p>
                     </div>
                     <div class="vision-card">
-                        <h3>🐟 Ecosystem Restoration</h3>
+                        <div class="card-icon-wrap">🐟</div>
+                        <h3>Ecosystem Restoration</h3>
                         <p>To help in restoration of aging aquatic ecosystem (Eutrophication) which is disturbed due to over pollution of Rivers.</p>
                     </div>
                 </div>
@@ -227,50 +247,76 @@
 
             <!-- About Us Section -->
             <section id="about" class="content-section">
-                <h2>About Us</h2>
+                <div class="section-header">
+                    <span class="section-tag">Who We Are</span>
+                    <h2>About Us</h2>
+                    <div class="section-line"></div>
+                </div>
                 <div class="about-content">
-                    <p><strong>RIVERCARE RESEARCH FOUNDATION</strong> is a Section 8 NGO incorporated on 30-May-2023.</p>
-                    <p>The company currently has 2 directors: <strong>MEENA CHOURASIA</strong> and <strong>AMIT CHOURASIA</strong>, all of whom were appointed as promoters.</p>
-                    <p><strong>Registered Office:</strong> 11, Hanumanji Ward No.22, Tehsil Mandla, Maharajpur (Mandla), Madhya Pradesh 481665, India.</p>
+                    <div class="about-block">
+                        <div class="about-icon">🏛️</div>
+                        <p><strong>RIVERCARE RESEARCH FOUNDATION</strong> is a Section 8 NGO incorporated on <strong>30-May-2023</strong>.</p>
+                    </div>
+                    <div class="about-block">
+                        <div class="about-icon">👥</div>
+                        <p>The company currently has 2 directors: <strong>MEENA CHOURASIA</strong> and <strong>AMIT CHOURASIA</strong>, all of whom were appointed as promoters.</p>
+                    </div>
+                    <div class="about-block">
+                        <div class="about-icon">📍</div>
+                        <p><strong>Registered Office:</strong> 11, Hanumanji Ward No.22, Tehsil Mandla, Maharajpur (Mandla), Madhya Pradesh 481665, India.</p>
+                    </div>
                 </div>
             </section>
 
             <!-- Message Section -->
             <section id="message" class="content-section">
-                <h2>Our Message</h2>
+                <div class="section-header">
+                    <span class="section-tag">A Call to Action</span>
+                    <h2>Our Message</h2>
+                    <div class="section-line"></div>
+                </div>
                 <div class="message-content">
+                    <div class="quote-marks">"</div>
                     <blockquote>
-                        "Let's unite to protect our rivers! They are the lifeblood of our planet, providing water, food, and habitats for countless species. Yet, they face numerous threats from pollution, over-extraction, and climate change. Every small action counts, and collective efforts can have a significant impact. Let's work together to preserve the beauty, health, and vitality of our rivers for future generations."
+                        Let's unite to protect our rivers! They are the lifeblood of our planet, providing water, food, and habitats for countless species. Yet, they face numerous threats from pollution, over-extraction, and climate change. Every small action counts, and collective
+                        efforts can have a significant impact. Let's work together to preserve the beauty, health, and vitality of our rivers for future generations.
                     </blockquote>
+                    <div class="quote-footer">— River Care Research Foundation</div>
                 </div>
             </section>
 
             <!-- What We Do Section -->
             <section id="work" class="content-section">
-                <h2>What We Do</h2>
+                <div class="section-header">
+                    <span class="section-tag">Our Actions</span>
+                    <h2>What We Do</h2>
+                    <div class="section-line"></div>
+                </div>
                 <div class="work-content">
-                    <p>As a River Care NGO, our mission is to protect and preserve rivers and their surrounding ecosystems. We focus on:</p>
-                    
+                    <p class="work-intro">As a River Care NGO, our mission is to protect and preserve rivers and their surrounding ecosystems. We focus on:</p>
                     <div class="work-areas">
                         <div class="work-card">
-                            <h3>🛡️ River Conservation</h3>
+                            <div class="card-icon-wrap">🛡️</div>
+                            <h3>River Conservation</h3>
                             <p>Protecting rivers from pollution, over-extraction, and habitat destruction.</p>
                         </div>
                         <div class="work-card">
-                            <h3>📚 Education and Awareness</h3>
+                            <div class="card-icon-wrap">📚</div>
+                            <h3>Education & Awareness</h3>
                             <p>Educating local communities, schools, and stakeholders about river conservation.</p>
                         </div>
                         <div class="work-card">
-                            <h3>🤝 Community Engagement</h3>
+                            <div class="card-icon-wrap">🤝</div>
+                            <h3>Community Engagement</h3>
                             <p>Collaborating with local communities to promote sustainable practices.</p>
                         </div>
                         <div class="work-card">
-                            <h3>🔬 Research and Monitoring</h3>
+                            <div class="card-icon-wrap">🔬</div>
+                            <h3>Research & Monitoring</h3>
                             <p>Conducting research and monitoring to understand river health and develop effective conservation strategies.</p>
                         </div>
                     </div>
-
-                    <h3>Key Activities:</h3>
+                    <h3 class="activities-heading">Key Activities</h3>
                     <ul class="activities-list">
                         <li>Organizing river cleanups and promoting community involvement</li>
                         <li>Monitoring water quality to identify sources of pollution</li>
@@ -282,78 +328,72 @@
             </section>
 
             <!-- Contact Us Section -->
-
             <section id="contact" class="content-section">
-                <h2>Contact Us</h2>
+                <div class="section-header">
+                    <span class="section-tag">Reach Out</span>
+                    <h2>Contact Us</h2>
+                    <div class="section-line"></div>
+                </div>
                 <div class="contact-content">
-                
                     <div class="contact-info">
                         <div class="contact-card">
-                            <h3>📍 Address</h3>
-                            <p>76, London Villa , Bhanwarshala<br>
-                            Indore<br>
-                            Madhya Pradesh 481665, India</p>
+                            <div class="card-icon-wrap">📍</div>
+                            <h3>Address</h3>
+                            <p>76, London Villa, Bhanwarshala<br>Indore, Madhya Pradesh 481665, India</p>
                         </div>
                         <div class="contact-card">
-                            <h3>👥 Directors</h3>
-                            <p>MEENA CHOURASIA<br>
-                            AMIT CHOURASIA</p>
+                            <div class="card-icon-wrap">👥</div>
+                            <h3>Directors</h3>
+                            <p>MEENA CHOURASIA<br>AMIT CHOURASIA</p>
                         </div>
                         <div class="contact-card">
-                            <h3>📧 Get in Touch</h3>
-                            <p>Email: rivercare2023@gmail.com<br>
-                            Phone: +91-8959592862</p>
+                            <div class="card-icon-wrap">📧</div>
+                            <h3>Get in Touch</h3>
+                            <p>Email: rivercare2023@gmail.com<br>Phone: +91-8959592862</p>
                         </div>
-                        <div class="social-links">
-    <a href="https://wa.me/919999999999" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
-    <a href="https://www.facebook.com/yourpage" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-    <a href="https://www.instagram.com/rcr_foundation_?igsh=MWxmcGhmajZ5YWNiZQ==" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-    <a href="https://x.com/RCR_FOUNDATION?s=08" target="_blank"><img src="twitter.png" alt="Twitter"></a>
-    <a href="https://youtube.com/@rivercarereserchfoundaion?si=w6O5GR5sACE4u-qw" target="_blank"><img src="youtube.png" alt="Youtube"></a>
-    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-    <a href="https://www.google.com/maps/place/London+Villas,+Bhawrasla,+Indore,+Madhya+Pradesh+453555/@22.7961686,75.8553386,17z/data=!3m1!4b1!4m6!3m5!1s0x396303019fabdc4b:0x98c188f390ea38da!8m2!3d22.7961686!4d75.8579135!16s%2Fg%2F11b6gcyjs1?entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" target="_blank"><img src="map.png" alt="Map"></a>
-</div>
-
+                    </div>
+                    <div class="social-links">
+                        <a href="https://wa.me/919999999999" target="_blank" title="WhatsApp"><img src="whatsapp.png" alt="WhatsApp"></a>
+                        <a href="https://www.facebook.com/yourpage" target="_blank" title="Facebook"><img src="facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/rcr_foundation_?igsh=MWxmcGhmajZ5YWNiZQ==" target="_blank" title="Instagram"><img src="instagram.png" alt="Instagram"></a>
+                        <a href="https://x.com/RCR_FOUNDATION?s=08" target="_blank" title="Twitter"><img src="twitter.png" alt="Twitter"></a>
+                        <a href="https://youtube.com/@rivercarereserchfoundaion?si=w6O5GR5sACE4u-qw" target="_blank" title="YouTube"><img src="youtube.png" alt="Youtube"></a>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><img src="linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://www.google.com/maps/place/London+Villas,+Bhawrasla,+Indore,+Madhya+Pradesh+453555/@22.7961686,75.8553386,17z" target="_blank" title="Map"><img src="map.png" alt="Map"></a>
                     </div>
                 </div>
             </section>
+
         </div>
-        
     </main>
 
     <!-- Floating Donate Button -->
     <div class="floating-donate">
-        <button class="floating-donate-btn" onclick="openDonateModal()">
-            ₹ Donate
-        </button>
+        <button class="floating-donate-btn" onclick="openDonateModal()">₹ Donate</button>
     </div>
 
     <!-- Donate Modal -->
     <div id="donateModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeDonateModal()">&times;</span>
-            <!-- <h2>Support Our Cause</h2>
-            <p>Help us protect and preserve our rivers for future generations.</p> -->
-            
-             <h2>Support Our Mission</h2>
+            <h2>💚 Support Our Mission</h2>
+            <p class="modal-sub">Every rupee helps protect India's rivers</p>
             <div class="donate-options">
                 <div class="donate-section">
                     <h3>Bank Transfer Details</h3>
                     <div class="bank-details">
                         <p><strong>Account Name:</strong> River Care Research Foundation</p>
-                        <p><strong>Account Number:</strong>50200082368743</p>
-                        <p><strong>IFSC Code:</strong>HDFC0000036</p>
-                        <p><strong>Bank:</strong>HDFC Bank</p>
-                        
+                        <p><strong>Account Number:</strong> 50200082368743</p>
+                        <p><strong>IFSC Code:</strong> HDFC0000036</p>
+                        <p><strong>Bank:</strong> HDFC Bank</p>
                     </div>
                 </div>
                 <div class="donate-section">
                     <h3>Scan QR Code</h3>
                     <div class="qr-code">
                         <div class="qr-placeholder">
-                            <i class="fas fa-qrcode"></i>
-                             <img src="qr.png" height="240px" width="160px" alt="QR Code">
-                            <p>QR Code for UPI Payment</p>
+                            <img src="qr.png" height="240px" width="160px" alt="QR Code">
+                            <p>UPI Payment</p>
                         </div>
                     </div>
                 </div>
@@ -363,103 +403,61 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2023 River Care Research Foundation. All rights reserved.</p>
-            <p class="hindi-footer">नदियों की सुरक्षा, हमारी जिम्मेदारी</p>
-            <h4>Developed By- ADARSH SAHU</h4>
-            
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+                <path d="M0,40 C300,80 900,0 1200,40 L1200,80 L0,80 Z" fill="var(--footer-bg)"/>
+            </svg>
+        </div>
+        <div class="footer-body">
+            <div class="container">
+                <div class="footer-logo-text">
+                    <img src="logo.jpeg.jpg" alt="River Care Logo" class="footer-logo">
+                    <div>
+                        <p class="footer-name">River Care Research Foundation</p>
+                        <p class="hindi-footer">नदियों की सुरक्षा, हमारी जिम्मेदारी</p>
+                    </div>
+                </div>
+                <p class="footer-copy">&copy; 2023 River Care Research Foundation. All rights reserved.</p>
+                <p class="footer-dev">Developed by <strong>ADARSH SAHU</strong></p>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Show/Hide Sections
         function showSection(sectionId) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.content-section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            
-            // Show selected section
+            document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
             document.getElementById(sectionId).classList.add('active');
-            
-            // Update navigation
-            const navLinks = document.querySelectorAll('.nav-menu a');
-            navLinks.forEach(link => {
-                link.classList.remove('active');
+            document.querySelectorAll('.nav-menu a').forEach(l => l.classList.remove('active'));
+            const link = document.querySelector(`.nav-menu a[href="#${sectionId}"]`);
+            if (link) link.classList.add('active');
+            window.scrollTo({
+                top: document.querySelector('.navbar').offsetTop - 10,
+                behavior: 'smooth'
             });
-            document.querySelector(`[href="#${sectionId}"]`).classList.add('active');
         }
 
-        // Donate Modal Functions
         function openDonateModal() {
-            document.getElementById('donateModal').style.display = 'block';
+            document.getElementById('donateModal').style.display = 'flex';
         }
 
         function closeDonateModal() {
             document.getElementById('donateModal').style.display = 'none';
         }
 
-        // Close modal when clicking outside
         window.onclick = function(event) {
             const modal = document.getElementById('donateModal');
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
+            if (event.target == modal) modal.style.display = 'none';
         }
 
-        // Amount Selection
-        let selectedAmount = 0;
-
-        function selectAmount(amount) {
-            selectedAmount = amount;
-            document.getElementById('customAmount').value = amount;
-            
-            // Update button styles
-            const buttons = document.querySelectorAll('.amount-btn');
-            buttons.forEach(btn => btn.classList.remove('selected'));
-            event.target.classList.add('selected');
-        }
-
-        // Custom amount input
-        document.getElementById('customAmount').addEventListener('input', function() {
-            selectedAmount = this.value;
-            // Remove selection from preset buttons
-            const buttons = document.querySelectorAll('.amount-btn');
-            buttons.forEach(btn => btn.classList.remove('selected'));
-        });
-
-        // Razorpay Integration (Demo)
-        function payWithRazorpay() {
-            const amount = selectedAmount || document.getElementById('customAmount').value;
-            
-            if (!amount || amount <= 0) {
-                alert('Please select or enter a valid amount');
-                return;
-            }
-
-            // This is a demo - In real implementation, you'll need to integrate with Razorpay API
-            alert(`Demo: Processing donation of ₹${amount}\n\nIn actual implementation, this will redirect to Razorpay payment gateway.`);
-            
-            // Close modal after "payment"
-            closeDonateModal();
-        }
-
-        // Smooth scrolling for navigation
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                showSection(targetId);
+                showSection(this.getAttribute('href').substring(1));
             });
         });
 
-        // Initialize first section
-        document.addEventListener('DOMContentLoaded', function() {
-            showSection('home');
-        });
+        document.addEventListener('DOMContentLoaded', () => showSection('home'));
     </script>
 </body>
+
 </html>
-
-
