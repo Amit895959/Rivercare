@@ -141,6 +141,45 @@ header {
     margin: 0 15px;
 }
 
+.logo {
+    width: 200px;
+    height: 220px;
+}
+@media(max-width:768px){
+
+.logo{
+    width:100px;
+    height:100px;
+}
+
+}
+.nav-menu {
+    flex-direction: column;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+@media(max-width:480px){
+
+h1{
+   font-size:1.5rem;
+}
+
+h2{
+   font-size:1.3rem;
+}
+
+p{
+   font-size:0.95rem;
+}
+
+}
+button{
+    min-height:48px;
+}
+
 .nav-menu a {
     text-decoration: none;
     color: #333;
